@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.ods
+.env
+.DS_Store
+
