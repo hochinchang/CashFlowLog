@@ -1,0 +1,4 @@
+# CashFlowLog 使用的套件
+# Python 內建：sqlite3、tkinter 無需安裝，列出可能額外使用者
+pandas>=2.2.0
+openpyxl>=3.1.2
