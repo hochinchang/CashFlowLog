@@ -36,7 +36,8 @@ def build_fixed_tab(notebook):
 
     fixed_item = ttk.Combobox(frame, values=["健保", "公保", "年金", "上網費", "行動電話費", "貸款", "大樓管理費", "水費", "電費", "瓦斯費"])
     fixed_item.set("健保")
-    fixed_date = tk.Entry(frame)
+    #fixed_date = tk.Entry(frame)
+    fixed_date = DateEntry(frame, date_pattern='yyyy-mm-dd')
     fixed_amount = tk.Entry(frame)
     fixed_note = tk.Entry(frame)
 
@@ -59,7 +60,8 @@ def build_daily_tab(notebook):
     frame = ttk.Frame(notebook)
     notebook.add(frame, text="每日支出紀錄")
 
-    daily_date = tk.Entry(frame)
+    #daily_date = tk.Entry(frame)
+    daily_date = DateEntry(frame, date_pattern='yyyy-mm-dd')
     daily_type = ttk.Combobox(frame, values=["收入", "支出"])
     daily_type.set("支出")
     daily_item = tk.Entry(frame)
