@@ -1,6 +1,8 @@
+from tkcalendar import DateEntry
 import tkinter as tk
 from tkinter import ttk, messagebox
 from . import db
+
 
 def build_income_tab(notebook):
     frame = ttk.Frame(notebook)
@@ -8,7 +10,8 @@ def build_income_tab(notebook):
 
     income_item = ttk.Combobox(frame, values=["本俸", "專業加給", "其他"])
     income_item.set("本俸")
-    income_date = tk.Entry(frame)
+    #income_date = tk.Entry(frame)
+    income_date = DateEntry(frame, date_pattern='yyyy-mm-dd')
     income_amount = tk.Entry(frame)
     income_note = tk.Entry(frame)
 
