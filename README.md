@@ -1,4 +1,4 @@
-# CashFlowLog
+# CashFlowLog V0.1
 
 個人記帳應用程式，使用 Python + SQLite + Tkinter 製作，支援：
 - 本月收入管理
